@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TheShortcut</string>
+    <string name="no_shortcut">No shortcut</string>
+    <string name="label">Label</string>
+    <string name="component_name">Component Name</string>
+    <string name="package_name">Package Name</string>
+    <string name="create">Create</string>
+    <string name="id">ID</string>
+    <string name="action">Action</string>
+    <string name="settings">Settings</string>
+    <string name="preset">Preset</string>
+    <string name="preset_system_ui_debug">System UI Debug Mode</string>
+</resources>

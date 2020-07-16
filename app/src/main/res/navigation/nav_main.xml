@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.mokelab.tools.shortcut.pages.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_main_to_create"
+            app:destination="@id/createShortcutFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/createShortcutFragment"
+        android:name="com.mokelab.tools.shortcut.pages.create.CreateShortcutFragment"
+        android:label="CreateShortcutFragment"
+        tools:layout="@layout/create_shortcut_fragment">
+        <action
+            android:id="@+id/action_create_to_setting"
+            app:destination="@id/createSettingShortcutFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_create_to_dialog"
+            app:destination="@id/selectPresetDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createSettingShortcutFragment"
+        android:name="com.mokelab.tools.shortcut.pages.create.setting.CreateSettingShortcutFragment"
+        android:label="CreateSettingShortcutFragment"
+        tools:layout="@layout/create_settings_shortcut_fragment" />
+    <dialog
+        android:id="@+id/selectPresetDialogFragment"
+        android:name="com.mokelab.tools.shortcut.pages.create.SelectPresetDialogFragment"
+        android:label="SelectPresetDialogFragment" />
+</navigation>
